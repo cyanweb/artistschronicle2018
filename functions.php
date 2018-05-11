@@ -428,3 +428,28 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 if( function_exists('acf_add_options_page') ) {
 		acf_add_options_page();
 }
+
+// get edition month for header
+/**
+ * @param $issue
+ */
+function get_edition_month_text($issue) {
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issues_number',
+                'terms' => array( '$issue' )
+            ),
+        ),
+        'post_type' => 'issues',
+        'posts_per_page' => '1'
+    );
+    $query = new WP_Query( $args );
+
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) : $query->the_post();
+        $issue_postid = $post->ID;
+    }
+    $issue_month_text = get_field('issue_months', $issue_postid);
+    return $issue_month_text;
+}
