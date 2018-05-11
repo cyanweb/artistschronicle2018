@@ -1,5 +1,5 @@
-=== Twenty Sixteen ===
-Contributors: the WordPress team
+=== Artists Chronicle ===
+Contributors: the WordPress team + Cyanweb
 Requires at least: WordPress 4.4
 Tested up to: WordPress 5.0-trunk
 Version: 1.4
