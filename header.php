@@ -9,19 +9,26 @@
  * @since Twenty Sixteen 1.0
  */
 
-?><!DOCTYPE html>
+// get current published edition number
+  if (is_home()) {
+      $issue = get_field('home_edition', 'options');
+  }
+
+// get edition month year
+$monthtext = get_edition_month_text($issue);
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
-    
-   
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
 
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
      
 	<?php wp_head(); ?>
@@ -30,20 +37,17 @@
 <body <?php body_class(); ?>>
 
 <div id="container-header">
-
-
 	<div id="pagewrap">
     
     <div class="header-box-lft">
 			<div class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/logo-artists-chronicle.png" alt="Artists Chronicle" title="Artists Chronicle" ></a></div>
-            
-        </div> 
+    </div>
            
 			
 	 <div class="header-box-rt">
 	  
-       <div class="issue-no-box"><h2>ISSUE NO 170</h2>
-JULY/AUGUST 2017</div>
+       <div class="issue-no-box"><h2>ISSUE NO <?php echo $issue;?></h2>
+<?php echo $monthtext;?></div>
       
       <div class="social-box"><a id="social-icon" href="#" title="facebook" class="face">facebook</a> <a id="social-icon" href="#" title="Instagram" class="instagram">Instagram</a></div>
       
