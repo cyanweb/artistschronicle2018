@@ -11,7 +11,7 @@
 
 // get current published edition number
   if (is_home()) {
-      $issue = get_field('home_edition', 'options');
+      $issue = get_field('home_edition', 'option');
   }
 
   if(isset($issue)) {
@@ -49,7 +49,7 @@
 	 <div class="header-box-rt">
 	  
        <div class="issue-no-box"><h2>ISSUE NO <?php echo $issue;?></h2>
-<?php echo $monthtext;?></div>
+<?php if (isset($monthtext)) { echo $monthtext; }?></div>
       
       <div class="social-box"><a id="social-icon" href="#" title="facebook" class="face">facebook</a> <a id="social-icon" href="#" title="Instagram" class="instagram">Instagram</a></div>
       
