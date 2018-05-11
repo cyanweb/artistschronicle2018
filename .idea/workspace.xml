@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d942772f-9dbb-4b42-a9c1-d69fad397ed9" name="Default" comment="fix css">
+=======
+    <list default="true" id="d942772f-9dbb-4b42-a9c1-d69fad397ed9" name="Default" comment="css work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +18,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
               <caret line="1700" column="18" lean-forward="true" selection-start-line="1700" selection-start-column="18" selection-end-line="1700" selection-end-column="18" />
+=======
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="822" column="21" lean-forward="true" selection-start-line="822" selection-start-column="21" selection-end-line="822" selection-end-column="21" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -26,7 +48,11 @@
         <entry file="file://$PROJECT_DIR$/sass/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
+<<<<<<< HEAD
               <caret line="8" selection-start-line="8" selection-end-line="14" selection-end-column="1" />
+=======
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="14" selection-end-column="1" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -42,7 +68,12 @@
         <option value="$PROJECT_DIR$/single-issue.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/page-front.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/header.php" />
+=======
+        <option value="$PROJECT_DIR$/sass/style.sass" />
+        <option value="$PROJECT_DIR$/sass/style.scss" />
+>>>>>>> master
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -84,6 +115,15 @@
               <item name="artistschronicle2018" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="artistschronicle2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="artistschronicle2018" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+>>>>>>> master
           </expand>
           <select />
         </subPane>
@@ -92,14 +132,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/sass/sass.bat" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jonathan\PhpstormProjects\artistschronicle2018" />
     </key>
+=======
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+>>>>>>> master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,6 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526010871845</updated>
+<<<<<<< HEAD
       <workItem from="1526010873934" duration="12733000" />
     </task>
     <task id="LOCAL-00001" summary="workspace update">
@@ -243,13 +290,34 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="13659000" />
+=======
+      <workItem from="1526010873934" duration="112000" />
+      <workItem from="1526063257173" duration="4042000" />
+    </task>
+    <task id="LOCAL-00001" summary="css work">
+      <created>1526066726119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526066726119</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4154000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32908705" />
+=======
+      <window_info anchor="bottom" id="Messages" weight="0.32908705" />
+>>>>>>> master
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -266,7 +334,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="TODO" order="6" />
+=======
+>>>>>>> master
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -278,6 +349,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="workspace update" />
     <MESSAGE value="reset wp query in get_edition_month_text" />
     <MESSAGE value="current issue vs issue" />
@@ -286,6 +358,10 @@
     <MESSAGE value="globals testing" />
     <MESSAGE value="fix css" />
     <option name="LAST_COMMIT_MESSAGE" value="fix css" />
+=======
+    <MESSAGE value="css work" />
+    <option name="LAST_COMMIT_MESSAGE" value="css work" />
+>>>>>>> master
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/page-front.php">
@@ -316,6 +392,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/single-issue.php" />
     <entry file="file://$PROJECT_DIR$/single.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -349,13 +426,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="14" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/sass/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="14" selection-end-column="1" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="431">
           <caret line="1700" column="18" lean-forward="true" selection-start-line="1700" selection-start-column="18" selection-end-line="1700" selection-end-column="18" />
+=======
+        <state relative-caret-position="1581">
+          <caret line="822" column="21" lean-forward="true" selection-start-line="822" selection-start-column="21" selection-end-line="822" selection-end-column="21" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
