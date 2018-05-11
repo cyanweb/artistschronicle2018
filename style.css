@@ -828,7 +828,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.33em;
-	pading:0px;
+	padding:0px;
 	color:#333333;
 }
 
@@ -969,7 +969,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.11em;
-	pading:0px;
+	padding:0px;
 	color:#333333;
 }
 
@@ -1093,7 +1093,7 @@ color: #ffffff;
 	font-size: .76em;
 	font-weight:300;
 	line-height: 1.21em;
-	pading:0px;
+	padding:0px;
 	color:#333333;
 }
 
@@ -1351,7 +1351,7 @@ color: #ffffff;
 	}
 	
 	#sidebar h2{
-	width:90%
+	width:90%;
 	margin: 0 0 35px 0;
 	}
 	
@@ -1458,7 +1458,6 @@ POST NAVIGATION
 	color: #fff;
 	font: normal 20px/100% "Times New Roman", Times, serif;
 	display: block;
-	width: auto;
 	float: left;
 	width: 32px;
 	height: 28px;
@@ -1537,7 +1536,7 @@ COMMENTS
 	text-decoration: none;
 }
 .commentlist .bypostauthor > .comment-author cite {
-	background: url(images/icon-author-comment.png) no-repeat 0 2px;
+
 	padding-left: 18px;
 }
 .commentlist .comment-time {
@@ -1696,3 +1695,10 @@ CLEARFIX
 .clearfix { display: block; zoom: 1; }
 
 
+.covercaption {
+    background: #000000;
+    margin: 0;
+}
+.covercaption p {
+    margin: 0;
+}
