@@ -18,7 +18,7 @@ $currentissue = $currentissue->name;
   } else {
       $post = $wp_query->post;
       $postid = $post->ID;
-      if (get_post_type($postid) == 'issues' && !is_front_page()) {
+      if (get_post_type($postid) == 'issues' && is_front_page()=='False') {
           $issue = get_the_title($postid);
       }
   }
