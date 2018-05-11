@@ -23,8 +23,13 @@ $size = 'full';
 if($coverimage) {
     $coverimageurl = wp_get_attachment_image($coverimage,$size);
 }
+
+$covercaption = get_cover_caption($issueid);
+
 ?>
-<div id="slider-wrap"><?php echo $coverimageurl;?></div>
+<div id="slider-wrap"><?php if($coverimageurl) {echo $coverimageurl;}?>
+<div class="covercaption"><?php if($covercaption){echo $covercaption;}?></div>
+</div>
 
 <div id="content-wrap">
 

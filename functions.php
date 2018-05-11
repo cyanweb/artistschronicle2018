@@ -481,3 +481,27 @@ function get_issue_cover_image($issue) {
     $issue_cover_image = get_field('cover_image', $issue_postid);
     return $issue_cover_image;
 }
+
+function get_cover_caption($issue) {
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issue_number',
+                'field' => 'slug',
+                'terms' => array( $issue )
+            ),
+        ),
+        'post_type' => 'issues',
+        'posts_per_page' => '1'
+    );
+    $query = new WP_Query( $args );
+    //var_dump($query);
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) : $query->the_post();
+            $issue_postid = get_the_ID();
+        endwhile;
+    }
+    wp_reset_query();
+    $issue_cover_caption = get_field('cover_image_caption', $issue_postid);
+    return $issue_cover_caption;
+}
