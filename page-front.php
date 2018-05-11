@@ -11,7 +11,9 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header();
+
+?>
 <!-- page-front -->
 <div id="slider-wrap"><img src="<?php bloginfo('template_directory'); ?>/images/header-home.jpg" width="auto" height="auto"></div>
 
