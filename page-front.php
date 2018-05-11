@@ -27,6 +27,7 @@ if($coverimage) {
 $covercaption = get_cover_caption($issueid);
 
 // get issue image
+$issueid = $GLOBALS['issue'];
 $issueimage = get_issue_image($issueid);
 $size = 'full';
 if($issueimage) {

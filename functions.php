@@ -503,8 +503,8 @@ function get_issue_image($issue) {
         endwhile;
     }
     wp_reset_query();
-    $issue_image = get_field('issue_image', $issue_postid);
-    return $issue_image;
+    $issue_cover_image = get_field('cover_image', $issue_postid);
+    return $issue_cover_image;
 }
 
 /* get pdf download link url */
