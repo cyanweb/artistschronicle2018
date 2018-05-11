@@ -505,3 +505,25 @@ function get_cover_caption($issue) {
     $issue_cover_caption = get_field('cover_image_caption', $issue_postid);
     return $issue_cover_caption;
 }
+
+
+// function checks user subscription
+function check_subscription() {
+    $subscribed = false;
+    if ( is_user_logged_in() ) {
+
+        $userid = get_current_user_id();
+
+        if(user_can($userid, 'memberpress_product_authorized_538')) {
+            $subscribed = true;
+            //echo "is authorised";
+        }
+
+        if(user_can($userid, 'memberpress_product_authorized_537')) {
+            $subscribed = true;
+            //echo "is authorised";
+        }
+
+    }
+    return $subscribed;
+}

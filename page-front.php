@@ -40,7 +40,13 @@ $covercaption = get_cover_caption($issueid);
             
       <div id="cont-issue-title">
          <h2>IN THIS ISSUE</h2>
-         <div class="download"><a href="#">#170 - download pdf</a></div>
+        <?php
+        // if user has membership that allows download - show download link
+        if ( check_subscription()) { ?>
+         <div class="download"><?php echo $edition_pdf_link; ?></div>
+        <?php } else { ?>
+          <div class="download"><a href="<?php echo get_field('subscription_page','option');?>">Subscribe for PDF</a></div>
+        <?php } ?>
      </div> 
       
          

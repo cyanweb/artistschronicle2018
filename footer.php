@@ -55,9 +55,26 @@
 <?php wp_footer(); ?>
 
 <!-- Include jQuery -->
-    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
-    <!-- Include the Sidr JS -->
-    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+
+<!-- Read More -->
+<script type='text/javascript'>//<![CDATA[
+    $(window).load(function(){
+        var moreText = "read more",
+            lessText = "read less",
+            moreButton = $("a.readmorebtn");
+
+        moreButton.click(function () {
+            var $this = $(this);
+            $this.text($this.text() == moreText ? lessText : moreText).nextAll(".more").slideToggle("fast");
+        });
+    });//]]>
+
+</script>
+
+
+<!-- Include the Sidr JS -->
+<script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 
 <script>
 $(document).ready(function() {
