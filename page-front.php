@@ -12,18 +12,13 @@
  */
 
 get_header(); ?>
-
-  
+<!-- page-front -->
 <div id="slider-wrap"><img src="<?php bloginfo('template_directory'); ?>/images/header-home.jpg" width="auto" height="auto"></div>
 
 <div id="content-wrap">
 
-
-    
     <div id="content-lft">
-       
-      
-       
+
        <!-- editorial section-->
       <div id="editorial-wrap">
             
