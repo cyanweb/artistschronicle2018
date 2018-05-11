@@ -15,10 +15,12 @@ $currentissue = $currentissue->name;
 // get current published edition number
   if (is_front_page()) {
       $issue = $currentissue;
-  } else {
-      if (get_post_type($postid) == 'issues' && !is_front_page() && !is_archive()) {
-          $post = $wp_query->post;
-          $postid = $post->ID;
+  }
+  if(!is_archive()) {
+      $post = $wp_query->post;
+      $postid = $post->ID;
+  if (get_post_type($postid) == 'issues' && !is_front_page()) {
+
           $issue = get_the_title($postid);
       } else {
           $issue = $currentissue;
