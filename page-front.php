@@ -53,7 +53,7 @@ if($issueimage) {
         // if user has membership that allows download - show download link
         if ( check_subscription()) {
             $edition_pdf_link = get_pdf_download_link($issueid);?>
-         <div class="download"><?php echo $edition_pdf_link; ?></div>
+         <div class="download"><a href="<?php echo $edition_pdf_link; ?>" target="_blank">#<?php echo $issueid;?> PDF Download</a></div>
         <?php } else { ?>
           <div class="download"><a href="<?php echo get_field('subscription_page','option');?>">Subscribe for PDF</a></div>
         <?php } ?>
