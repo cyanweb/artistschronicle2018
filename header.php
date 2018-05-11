@@ -10,7 +10,7 @@
  */
 
 // get current published edition number
-  if (is_home()) {
+  if (is_front_page()) {
       $issue = get_field('home_edition', 'option');
   }
 
