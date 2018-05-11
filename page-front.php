@@ -26,6 +26,15 @@ if($coverimage) {
 
 $covercaption = get_cover_caption($issueid);
 
+// get issue image
+$issueid = $GLOBALS['issue'];
+$issueimage = get_issue_image($issueid);
+$size = 'full';
+if($issueimage) {
+    $issueimageurl = wp_get_attachment_image($issueimage,$size);
+}
+
+
 ?>
 <div id="slider-wrap"><?php if($coverimageurl) {echo $coverimageurl;}?>
 <div class="covercaption"><?php if($covercaption){echo $covercaption;}?></div>
@@ -53,7 +62,7 @@ $covercaption = get_cover_caption($issueid);
        <!-- editorial listing-->
       <div id="editorial-list">
     
-      <div id="editorial-list-lft"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/issue-cover.jpg" alt="#" title="#"></a></div>
+      <div id="editorial-list-lft"><?php if($issueimageurl) {echo $issueimageurl;}?></div>
       
        <div id="editorial-list-rt">
        

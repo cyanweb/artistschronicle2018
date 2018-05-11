@@ -482,6 +482,34 @@ function get_issue_cover_image($issue) {
     return $issue_cover_image;
 }
 
+/* get issue image */
+function get_issue_image($issue) {
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issue_number',
+                'field' => 'slug',
+                'terms' => array( $issue )
+            ),
+        ),
+        'post_type' => 'issues',
+        'posts_per_page' => '1'
+    );
+    $query = new WP_Query( $args );
+    //var_dump($query);
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) : $query->the_post();
+            $issue_postid = get_the_ID();
+        endwhile;
+    }
+    wp_reset_query();
+    $issue_cover_image = get_field('issue_image', $issue_postid);
+    return $issue_cover_image;
+}
+
+
+
+
 function get_cover_caption($issue) {
     $args = array(
         'tax_query' => array(
