@@ -435,8 +435,13 @@ if( function_exists('acf_add_options_page') ) {
  */
 function get_edition_month_text($issue) {
     $args = array(
-        'taxonomy' => 'issues_number',
-        'terms' => array( $issue ),
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issues_number',
+                'field' => 'slug',
+                'terms' => array( $issue )
+            ),
+        ),
         'post_type' => 'issues',
         'posts_per_page' => '1'
     );
