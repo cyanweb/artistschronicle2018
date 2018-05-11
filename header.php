@@ -14,8 +14,10 @@
       $issue = get_field('home_edition', 'options');
   }
 
-// get edition month year
-echo get_edition_month_text($issue);
+  if(isset($issue)) {
+      // get edition month year
+      echo get_edition_month_text($issue);
+  }
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
