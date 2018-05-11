@@ -828,7 +828,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.33em;
-	pading:0px;
+	padding:0;
 	color:#333333;
 }
 
@@ -969,7 +969,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.11em;
-	pading:0px;
+	padding:0;
 	color:#333333;
 }
 
@@ -1093,7 +1093,7 @@ color: #ffffff;
 	font-size: .76em;
 	font-weight:300;
 	line-height: 1.21em;
-	pading:0px;
+	padding:0;
 	color:#333333;
 }
 
@@ -1122,10 +1122,7 @@ color: #ffffff;
 	float: left;
 	width: 760px;
 	padding:0 0 0 0;
-	margin-top:55px;
-	margin-left:-40px;
-	margin-right:-40px;
-	margin-bottom:-40px;
+	margin:55px -40px -40px -40px;
 	
 }
 
@@ -1285,8 +1282,8 @@ color: #ffffff;
      color:#179ecc;
 }
 
-#footer  ul{list-style-type: none; padding: 0px 10px; margin: 5px 0 0; font-weight:600; line-height:1em; display:inline-block;}
-#footer  ul li{padding:0px 7px 0px 7px;  display:inline-block; border-right:1px solid #878787; }
+#footer  ul{list-style-type: none; padding: 0 10px; margin: 5px 0 0; font-weight:600; line-height:1em; display:inline-block;}
+#footer  ul li{padding:0 7px 0 7px;  display:inline-block; border-right:1px solid #878787; }
 #footer  ul li:first-child{border-left:1px solid #878787 !important; }
 #footer  ul li a{color: #878787; text-decoration:none;}
 #footer  ul li a:hover{color: #eeeeee; text-decoration:none;}
@@ -1458,7 +1455,6 @@ POST NAVIGATION
 	color: #fff;
 	font: normal 20px/100% "Times New Roman", Times, serif;
 	display: block;
-	width: auto;
 	float: left;
 	width: 32px;
 	height: 28px;
