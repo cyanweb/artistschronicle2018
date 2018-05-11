@@ -447,6 +447,7 @@ function get_edition_month_text($issue) {
         $issue_postid = get_the_ID();
         endwhile;
     }
+    wp_reset_query();
     $issue_month_text = get_field('issue_months', $issue_postid);
     return $issue_month_text;
 }
