@@ -503,7 +503,7 @@ function get_issue_image($issue) {
         endwhile;
     }
     wp_reset_query();
-    $issue_cover_image = get_field('issue_image', $issue_postid);
+    $issue_cover_image = get_field('issue_full_image', $issue_postid);
     return $issue_cover_image;
 }
 
