@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d942772f-9dbb-4b42-a9c1-d69fad397ed9" name="Default" comment="fix css">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="1538" column="4" selection-start-line="1538" selection-start-column="4" selection-end-line="1538" selection-end-column="4" />
+            <state relative-caret-position="431">
+              <caret line="1700" column="18" lean-forward="true" selection-start-line="1700" selection-start-column="18" selection-end-line="1700" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -232,11 +231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526025204146</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix css">
+      <created>1526067957856</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1526067957856</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13093000" />
+    <option name="totallyTimeSpent" value="13659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -348,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="1538" column="4" selection-start-line="1538" selection-start-column="4" selection-end-line="1538" selection-end-column="4" />
+        <state relative-caret-position="431">
+          <caret line="1700" column="18" lean-forward="true" selection-start-line="1700" selection-start-column="18" selection-end-line="1700" selection-end-column="18" />
         </state>
       </provider>
     </entry>
