@@ -46,7 +46,7 @@ $currentissue = $currentissue->name;
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
-     
+
 	<?php wp_head(); ?>
 </head>
 
@@ -54,17 +54,16 @@ $currentissue = $currentissue->name;
 
 <div id="container-header">
 	<div id="pagewrap">
-    
+
     <div class="header-box-lft">
 			<div class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/logo-artists-chronicle.png" alt="Artists Chronicle" title="Artists Chronicle" ></a></div>
     </div>
-           
-			
+
 	 <div class="header-box-rt">
-	  
+
        <div class="issue-no-box"><h2>ISSUE NO <?php if (isset($issue)) { echo $issue; }?></h2>
 <?php if (isset($monthtext)) { echo $monthtext; }?></div>
-      
+
       <div class="social-box"><a id="social-icon" href="#" title="facebook" class="face">facebook</a> <a id="social-icon" href="#" title="Instagram" class="instagram">Instagram</a></div>
       
        <div class="nav-box">
