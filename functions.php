@@ -437,7 +437,7 @@ function get_edition_month_text($issue) {
     $args = array(
         'tax_query' => array(
             array(
-                'taxonomy' => 'issues_number',
+                'taxonomy' => 'issue_number',
                 'field' => 'slug',
                 'terms' => array( $issue )
             ),
