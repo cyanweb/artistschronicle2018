@@ -16,9 +16,9 @@ $currentissue = $currentissue->name;
   if (is_front_page()) {
       $issue = $currentissue;
   } else {
-      $post = $wp_query->post;
-      $postid = $post->ID;
       if (get_post_type($postid) == 'issues' && !is_front_page() && !is_archive()) {
+          $post = $wp_query->post;
+          $postid = $post->ID;
           $issue = get_the_title($postid);
       } else {
           $issue = $currentissue;
