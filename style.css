@@ -1351,7 +1351,7 @@ color: #ffffff;
 	}
 	
 	#sidebar h2{
-	width:90%
+	width:90%;
 	margin: 0 0 35px 0;
 	}
 	
@@ -1537,7 +1537,6 @@ COMMENTS
 	text-decoration: none;
 }
 .commentlist .bypostauthor > .comment-author cite {
-	background: url(images/icon-author-comment.png) no-repeat 0 2px;
 	padding-left: 18px;
 }
 .commentlist .comment-time {
@@ -1694,5 +1693,14 @@ CLEARFIX
 .clearfix:after { visibility: hidden; display: block;  font-size: 0; content: " "; clear: both; height: 0; }
 .clearfix { display: inline-block; }
 .clearfix { display: block; zoom: 1; }
+
+/* additional */
+.covercaption {
+	background: #000000;
+	margin: 0;
+}
+.covercaption p {
+	margin: 0;
+}
 
 
