@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d942772f-9dbb-4b42-a9c1-d69fad397ed9" name="Default" comment="css work">
-      <change afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -27,8 +26,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="1539" column="4" selection-start-line="1539" selection-start-column="4" selection-end-line="1539" selection-end-column="4" />
+            <state relative-caret-position="1581">
+              <caret line="822" column="21" lean-forward="true" selection-start-line="822" selection-start-column="21" selection-end-line="822" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -145,25 +144,33 @@
       <option name="presentableId" value="Default" />
       <updated>1526010871845</updated>
       <workItem from="1526010873934" duration="112000" />
-      <workItem from="1526063257173" duration="3334000" />
+      <workItem from="1526063257173" duration="4042000" />
     </task>
+    <task id="LOCAL-00001" summary="css work">
+      <created>1526066726119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526066726119</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3446000" />
+    <option name="totallyTimeSpent" value="4154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32908705" />
+      <window_info anchor="bottom" id="Messages" weight="0.32908705" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32908705" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -226,8 +233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="1539" column="4" selection-start-line="1539" selection-start-column="4" selection-end-line="1539" selection-end-column="4" />
+        <state relative-caret-position="1581">
+          <caret line="822" column="21" lean-forward="true" selection-start-line="822" selection-start-column="21" selection-end-line="822" selection-end-column="21" />
         </state>
       </provider>
     </entry>
