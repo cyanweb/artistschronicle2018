@@ -10,13 +10,14 @@
  */
 
 // get current published edition number
-  if (is_home()) {
+  if (is_front_page()) {
       $issue = get_field('home_edition', 'option');
+	  $issue = $issue->name;
   }
 
   if(isset($issue)) {
       // get edition month year
-      echo get_edition_month_text($issue);
+      $monthtext = get_edition_month_text($issue);
   }
 ?>
 <!DOCTYPE html>

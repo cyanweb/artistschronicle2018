@@ -435,20 +435,16 @@ if( function_exists('acf_add_options_page') ) {
  */
 function get_edition_month_text($issue) {
     $args = array(
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'issues_number',
-                'terms' => array( '$issue' )
-            ),
-        ),
+        'taxonomy' => 'issues_number',
+        'terms' => array( $issue ),
         'post_type' => 'issues',
         'posts_per_page' => '1'
     );
     $query = new WP_Query( $args );
-
+	//var_dump($query);
     if ( $query->have_posts() ) {
         while ( $query->have_posts() ) : $query->the_post();
-        $issue_postid = $post->ID;
+        $issue_postid = get_the_ID();
         endwhile;
     }
     $issue_month_text = get_field('issue_months', $issue_postid);
