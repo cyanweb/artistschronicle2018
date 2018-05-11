@@ -25,7 +25,7 @@ $currentissue = $currentissue->name;
 
   if(isset($issue)) {
       // get edition month year
-      $monthtext = get_edition_month_text($issue);
+      $monthtext = get_issue_month_text($issue);
       // $cover = get_field('cover_image', $postid)
   }
 ?>

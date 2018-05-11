@@ -15,7 +15,15 @@ get_header();
 
 ?>
 <!-- page-front -->
-<div id="slider-wrap"><img src="<?php bloginfo('template_directory'); ?>/images/header-home.jpg" width="auto" height="auto"></div>
+<?php
+// get cover image
+$coverimage = get_issue_cover_image($issue);
+$size = 'full';
+if($coverimage) {
+    $coverimageurl = wp_get_attachment_image($coverimage,$size);
+}
+?>
+<div id="slider-wrap"><?php echo $coverimageurl;?></div>
 
 <div id="content-wrap">
 

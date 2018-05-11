@@ -433,7 +433,7 @@ if( function_exists('acf_add_options_page') ) {
 /**
  * @param $issue
  */
-function get_edition_month_text($issue) {
+function get_issue_month_text($issue) {
     $args = array(
         'tax_query' => array(
             array(
@@ -455,4 +455,29 @@ function get_edition_month_text($issue) {
     wp_reset_query();
     $issue_month_text = get_field('issue_months', $issue_postid);
     return $issue_month_text;
+}
+
+/* get issue  cover image */
+function get_issue_cover_image($issue) {
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issue_number',
+                'field' => 'slug',
+                'terms' => array( $issue )
+            ),
+        ),
+        'post_type' => 'issues',
+        'posts_per_page' => '1'
+    );
+    $query = new WP_Query( $args );
+    //var_dump($query);
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) : $query->the_post();
+            $issue_postid = get_the_ID();
+        endwhile;
+    }
+    wp_reset_query();
+    $issue_cover_image = get_field('cover_image', $issue_postid);
+    return $issue_cover_image;
 }
