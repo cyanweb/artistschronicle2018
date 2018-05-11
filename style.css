@@ -517,8 +517,8 @@ position:absolute;
 display:none;/**/
 width:200px;
 min-height:20px;
-margin-top:0px;
-margin-left:0px;
+margin-top:0;
+margin-left:0;
 z-index:101;
 }
 
@@ -592,8 +592,8 @@ color: #ffffff;
 }
 
 #slider-wrap {
-	float: left;
-	display:table-row;
+	/*float: left;
+	display:table-row;*/
 	width:1140px;
 	padding: 0px;
 	margin: 0 0 -6px;
@@ -828,11 +828,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.33em;
-<<<<<<< HEAD
-	padding:0px;
-=======
 	padding:0;
->>>>>>> master
 	color:#333333;
 }
 
@@ -973,11 +969,7 @@ color: #ffffff;
 	font-size: .83em;
 	font-weight:300;
 	line-height: 1.11em;
-<<<<<<< HEAD
-	padding:0px;
-=======
 	padding:0;
->>>>>>> master
 	color:#333333;
 }
 
@@ -1101,11 +1093,7 @@ color: #ffffff;
 	font-size: .76em;
 	font-weight:300;
 	line-height: 1.21em;
-<<<<<<< HEAD
-	padding:0px;
-=======
 	padding:0;
->>>>>>> master
 	color:#333333;
 }
 
@@ -1545,10 +1533,6 @@ COMMENTS
 	text-decoration: none;
 }
 .commentlist .bypostauthor > .comment-author cite {
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 	padding-left: 18px;
 }
 .commentlist .comment-time {
@@ -1718,6 +1702,7 @@ CLEARFIX
 
 .covercaption {
     background: #000000;
+    color: #ffffff;
     margin: -6px 0;
     padding: 16px;
 }
