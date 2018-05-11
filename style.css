@@ -1697,7 +1697,8 @@ CLEARFIX
 
 .covercaption {
     background: #000000;
-    margin: 0;
+    margin: -6px 0;
+    padding: 16px;
 }
 .covercaption p {
     margin: 0;
