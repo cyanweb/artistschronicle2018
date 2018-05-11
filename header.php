@@ -9,15 +9,24 @@
  * @since Twenty Sixteen 1.0
  */
 
+$currentissue = get_field('home_edition', 'option');
+$currentissue = $currentissue->name;
+
 // get current published edition number
   if (is_front_page()) {
-      $issue = get_field('home_edition', 'option');
-	  $issue = $issue->name;
+      $issue = $currentissue;
+  } else {
+      global $post;
+      $postid = $post->ID;
+      if (get_post_type($postid) == 'issues') {
+          $issue = get_the_title($postid);
+      }
   }
 
   if(isset($issue)) {
       // get edition month year
       $monthtext = get_edition_month_text($issue);
+      // $cover = get_field('cover_image', $postid)
   }
 ?>
 <!DOCTYPE html>
