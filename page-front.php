@@ -17,8 +17,8 @@ get_header();
 <!-- page-front -->
 <?php
 // get cover image
-$issue = $GLOBAL[issue];
-$coverimage = get_issue_cover_image($issue);
+$issueid = $GLOBALS['issue'];
+$coverimage = get_issue_cover_image($issueid);
 $size = 'full';
 if($coverimage) {
     $coverimageurl = wp_get_attachment_image($coverimage,$size);
