@@ -28,6 +28,8 @@ $currentissue = $currentissue->name;
       $monthtext = get_issue_month_text($issue);
       // $cover = get_field('cover_image', $postid)
   }
+
+  $GLOBALS['issue'] = $issue;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
