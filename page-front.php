@@ -17,6 +17,7 @@ get_header();
 <!-- page-front -->
 <?php
 // get cover image
+$issue = $GLOBAL[issue];
 $coverimage = get_issue_cover_image($issue);
 $size = 'full';
 if($coverimage) {
