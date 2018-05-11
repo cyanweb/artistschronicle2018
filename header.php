@@ -15,7 +15,7 @@
   }
 
 // get edition month year
-$monthtext = get_edition_month_text($issue);
+echo get_edition_month_text($issue);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
