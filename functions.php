@@ -449,6 +449,7 @@ function get_edition_month_text($issue) {
     if ( $query->have_posts() ) {
         while ( $query->have_posts() ) : $query->the_post();
         $issue_postid = $post->ID;
+        endwhile;
     }
     $issue_month_text = get_field('issue_months', $issue_postid);
     return $issue_month_text;
