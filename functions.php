@@ -433,7 +433,9 @@ if( function_exists('acf_add_options_page') ) {
 /**
  * @param $issue
  */
-function get_issue_month_text($issue) {
+
+// GET ISSUE POST_ID based on ISSUE ID
+function get_issue_post_id($issue) {
     $args = array(
         'tax_query' => array(
             array(
@@ -446,113 +448,46 @@ function get_issue_month_text($issue) {
         'posts_per_page' => '1'
     );
     $query = new WP_Query( $args );
-	//var_dump($query);
+    //var_dump($query);
     if ( $query->have_posts() ) {
         while ( $query->have_posts() ) : $query->the_post();
-        $issue_postid = get_the_ID();
+            $issue_postid = get_the_ID();
         endwhile;
     }
     wp_reset_query();
+    return $issue_postid;
+}
+
+function get_issue_month_text($issue) {
+    $issue_postid = get_issue_post_id($issue);
     $issue_month_text = get_field('issue_months', $issue_postid);
     return $issue_month_text;
 }
 
 /* get issue  cover image */
 function get_issue_cover_image($issue) {
-    $args = array(
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'issue_number',
-                'field' => 'slug',
-                'terms' => array( $issue )
-            ),
-        ),
-        'post_type' => 'issues',
-        'posts_per_page' => '1'
-    );
-    $query = new WP_Query( $args );
-    //var_dump($query);
-    if ( $query->have_posts() ) {
-        while ( $query->have_posts() ) : $query->the_post();
-            $issue_postid = get_the_ID();
-        endwhile;
-    }
-    wp_reset_query();
+    $issue_postid = get_issue_post_id($issue);
     $issue_cover_image = get_field('cover_image', $issue_postid);
     return $issue_cover_image;
 }
 
 /* get issue image */
 function get_issue_image($issue) {
-    $args = array(
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'issue_number',
-                'field' => 'slug',
-                'terms' => array( $issue )
-            ),
-        ),
-        'post_type' => 'issues',
-        'posts_per_page' => '1'
-    );
-    $query = new WP_Query( $args );
-    //var_dump($query);
-    if ( $query->have_posts() ) {
-        while ( $query->have_posts() ) : $query->the_post();
-            $issue_postid = get_the_ID();
-        endwhile;
-    }
-    wp_reset_query();
+    $issue_postid = get_issue_post_id($issue);
     $issue_cover_image = get_field('issue_full_image', $issue_postid);
     return $issue_cover_image;
 }
 
 /* get pdf download link url */
 function get_pdf_download_link($issue) {
-$args = array(
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'issue_number',
-            'field' => 'slug',
-            'terms' => array( $issue )
-        ),
-    ),
-    'post_type' => 'issues',
-    'posts_per_page' => '1'
-);
-$query = new WP_Query( $args );
-//var_dump($query);
-if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) : $query->the_post();
-        $issue_postid = get_the_ID();
-    endwhile;
-}
-    wp_reset_query();
+    $issue_postid = get_issue_post_id($issue);
     $issue_pdf = get_field('pdf_version', $issue_postid);
     return $issue_pdf;
 }
 
 /*get cover caption */
 function get_cover_caption($issue) {
-    $args = array(
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'issue_number',
-                'field' => 'slug',
-                'terms' => array( $issue )
-            ),
-        ),
-        'post_type' => 'issues',
-        'posts_per_page' => '1'
-    );
-    $query = new WP_Query( $args );
-    //var_dump($query);
-    if ( $query->have_posts() ) {
-        while ( $query->have_posts() ) : $query->the_post();
-            $issue_postid = get_the_ID();
-        endwhile;
-    }
-    wp_reset_query();
+    $issue_postid = get_issue_post_id($issue);
     $issue_cover_caption = get_field('cover_image_caption', $issue_postid);
     return $issue_cover_caption;
 }
@@ -562,19 +497,16 @@ function get_cover_caption($issue) {
 function check_subscription() {
     $subscribed = false;
     if ( is_user_logged_in() ) {
-
         $userid = get_current_user_id();
 
         if(user_can($userid, 'memberpress_product_authorized_538')) {
             $subscribed = true;
             //echo "is authorised";
         }
-
         if(user_can($userid, 'memberpress_product_authorized_537')) {
             $subscribed = true;
             //echo "is authorised";
         }
-
     }
     return $subscribed;
 }

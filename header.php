@@ -16,15 +16,17 @@ $currentissue = $currentissue->name;
   if (is_front_page()) {
       $issue = $currentissue;
   }
+
   if(!is_archive()) {
+
       $post = $wp_query->post;
       $postid = $post->ID;
-  if (get_post_type($postid) == 'issues' && !is_front_page()) {
 
+      if (get_post_type($postid) == 'issues' && !is_front_page()) {
           $issue = get_the_title($postid);
-      } else {
-          $issue = $currentissue;
       }
+  } else {
+      $issue = $currentissue;
   }
 
   if(isset($issue)) {
@@ -63,7 +65,7 @@ $currentissue = $currentissue->name;
 
 	 <div class="header-box-rt">
 
-       <div class="issue-no-box"><h2>ISSUE NO <?php if (isset($issue)) { echo $issue; }?></h2>
+       <div class="issue-no-box"><h2>ISSUE NO. <?php if (isset($issue)) { echo $issue; }?></h2>
 <?php if (isset($monthtext)) { echo $monthtext; }?></div>
 
       <div class="social-box"><a id="social-icon" href="#" title="facebook" class="face">facebook</a> <a id="social-icon" href="#" title="Instagram" class="instagram">Instagram</a></div>

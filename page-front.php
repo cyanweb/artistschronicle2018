@@ -16,8 +16,10 @@ get_header();
 ?>
 <!-- page-front -->
 <?php
-// get cover image
+// get issueid from GLOBALS
 $issueid = $GLOBALS['issue'];
+
+// get cover image
 $coverimage = get_issue_cover_image($issueid);
 $size = 'full';
 if($coverimage) {
@@ -27,12 +29,13 @@ if($coverimage) {
 $covercaption = get_cover_caption($issueid);
 
 // get issue image
-$issueid = $GLOBALS['issue'];
 $issueimage = get_issue_image($issueid);
 $size = 'full';
 if($issueimage) {
     $issueimageurl = wp_get_attachment_image($issueimage,$size);
 }
+
+// get issue editorial title
 
 
 ?>
@@ -60,21 +63,20 @@ if($issueimage) {
      </div> 
       
          
-       <!-- editorial listing-->
-      <div id="editorial-list">
-    
-      <div id="editorial-list-lft"><?php echo $issueimageurl;?></div>
+    <!-- editorial listing-->
+    <div id="editorial-list">
+       <div id="editorial-list-lft"><?php if($issueimageurl){echo $issueimageurl;}?></div>
       
        <div id="editorial-list-rt">
-       
-       <h3>EDITORIAL</h3>
-      
-       
-       <p>This edition, we feature a survey of the work of NSW artists Joyce Hinterding and David Haines, on show at the Perth Institute of Contemporary Arts. Radio waves, solar winds and aroma molecules are the medium of choice for the two, who encourage visitors to the exhibition to reimagine the world around us as buzzing with invisible energy.</p>
+          <?php
+          // get editorial title and content as $editorial_title and $editorial_content based on the current issue
 
-<p>Using unlikely antennas such as graphite drawings, viewers can listen to this invisible energy and add their own by touching the drawings. Both solo and collaborative works in Energies: Haines & Hinterding reveal a passion for science in the two artists’ aesthetically-driven work...</p>
+          ?>
+           <h3>EDITORIAL</h3>
+           <p>This edition, we feature a survey of the work of NSW artists Joyce Hinterding and David Haines, on show at the Perth Institute of Contemporary Arts. Radio waves, solar winds and aroma molecules are the medium of choice for the two, who encourage visitors to the exhibition to reimagine the world around us as buzzing with invisible energy.</p>
+            <p>Using unlikely antennas such as graphite drawings, viewers can listen to this invisible energy and add their own by touching the drawings. Both solo and collaborative works in Energies: Haines & Hinterding reveal a passion for science in the two artists’ aesthetically-driven work...</p>
 
- <div class="full"><a href="#">click to read full editorial</a></div>
+             <div class="full"><a href="#">click to read full editorial</a></div>
        </div> 
    
 
