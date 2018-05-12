@@ -55,8 +55,7 @@
 <?php wp_footer(); ?>
 
 <!-- Include jQuery -->
-<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!-- Read More -->
 <script type='text/javascript'>//<![CDATA[
     $(window).load(function(){
@@ -65,19 +64,6 @@
 
 </script>
 
-
-<!-- Include the Sidr JS -->
-<script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-
-<script>
-$(document).ready(function() {
-     $('#simple-menu').sidr({
-     name: 'sidr-right',
-     source: '#nav-wrap',
-      side: 'right' // By default
-   });
-});
-</script>
 
 </body>
 </html>
