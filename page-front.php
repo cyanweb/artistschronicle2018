@@ -69,15 +69,13 @@ if($issueimage) {
       
        <div id="editorial-list-rt">
            <div class="dolessmore">
-               <?php
-          // get editorial title and content as $editorial_title and $editorial_content based on the current issue
-
-          ?>
+           <?php
+           // get editorial title and content as $editorial_title and $editorial_content based on the current issue
+           ?>
            <h3>EDITORIAL</h3>
-           <p>This edition, we feature a survey of the work of NSW artists Joyce Hinterding and David Haines, on show at the Perth Institute of Contemporary Arts. Radio waves, solar winds and aroma molecules are the medium of choice for the two, who encourage visitors to the exhibition to reimagine the world around us as buzzing with invisible energy.</p>
-            <p>Using unlikely antennas such as graphite drawings, viewers can listen to this invisible energy and add their own by touching the drawings. Both solo and collaborative works in Energies: Haines & Hinterding reveal a passion for science in the two artists’ aesthetically-driven work...</p>
-
-             <div class="full"><a href="#">click to read full editorial</a></div>
+               <?php
+               get_editorial_content($issueid);
+               ?>
            </div> <!-- end do less more -->
        </div>
    

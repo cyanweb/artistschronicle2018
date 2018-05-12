@@ -492,6 +492,38 @@ function get_cover_caption($issue) {
     return $issue_cover_caption;
 }
 
+// GET ISSUE POST_ID based on ISSUE ID
+function get_editorial_post_id($issue) {
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'issue_number',
+                'field' => 'slug',
+                'terms' => array( $issue )
+            ),
+        ),
+        'post_type' => 'editorial',
+        'posts_per_page' => '1'
+    );
+    $query = new WP_Query( $args );
+    //var_dump($query);
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) : $query->the_post();
+            $editorial_postid = get_the_ID();
+        endwhile;
+    }
+    wp_reset_query();
+    return $editorial_postid;
+}
+
+function get_editorial_content($issue) {
+    $editorial_postid = get_issue_post_id($issue);
+    $content_post = get_post($editorial_postid);
+    $content = $content_post->post_content;
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    return $content;
+}
 
 // function checks user subscription
 function check_subscription() {
