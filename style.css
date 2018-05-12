@@ -1692,7 +1692,7 @@ img.alignleft, img.aligncenter, img.alignright, img.alignnone {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 99%;
     /*height: 20px;*/
     text-align: center;
 }
