@@ -74,7 +74,7 @@ if($issueimage) {
            ?>
            <h3>EDITORIAL</h3>
                <?php
-               get_editorial_content($issueid);
+               echo get_editorial_content($issueid);
                ?>
            </div> <!-- end do less more -->
        </div>
