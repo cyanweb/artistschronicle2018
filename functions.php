@@ -517,7 +517,7 @@ function get_editorial_post_id($issue) {
 }
 
 function get_editorial_content($issue) {
-    $editorial_postid = get_issue_post_id($issue);
+    $editorial_postid = get_editorial_post_id($issue);
     $content_post = get_post($editorial_postid);
     $content = $content_post->post_content;
     $content = apply_filters('the_content', $content);
