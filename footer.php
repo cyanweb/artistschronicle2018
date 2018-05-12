@@ -61,7 +61,7 @@
 <!-- Read More -->
 <script type='text/javascript'>//<![CDATA[
     $(document).ready(function(){
-        $('.dolessmore').dolessmore({lHeight : 260});
+        $('.dolessmore').dolessmore({lHeight : 258});
     });
 </script>
 
