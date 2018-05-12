@@ -58,10 +58,9 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!-- Read More -->
 <script type='text/javascript'>//<![CDATA[
-    $(window).load(function(){
-        $('.dolessmore').dolessmore({lHeight : 200});
-    });//]]>
-
+    $(document).ready(function(){
+        $('.dolessmore').dolessmore();
+    });
 </script>
 
 
