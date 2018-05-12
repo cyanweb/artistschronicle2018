@@ -832,8 +832,8 @@ color: #ffffff;
 	color:#333333;
 }
 
-#editorial-list-rt .full a{
-    float:left;
+#editorial-list-rt a.lm-control{
+
 	width:100%;
 	display:block;
 	font-family: 'Arial', sans-serif;
@@ -848,7 +848,7 @@ color: #ffffff;
 	border:2px solid #464646;
 }
 
-#editorial-list-rt .full a:hover{
+#editorial-list-rt a.lm-control:hover{
     color: #464646;
 	background:#ffffff;
 	border:2px solid #464646;

@@ -61,7 +61,7 @@
                 .addClass('dolessmoreblock')
                 .addClass('dlmcontract')
                 .height(this.options.lHeight)
-                .append('<div class="lm-control"><a href="javascript:void(0)" class="glyphicon glyphicon-menu-down"></a></div>');
+                .append('<div class="lm-control"><a href="javascript:void(0)" class="glyphicon glyphicon-menu-down">READ MORE</a></div>');
 
             this.lmControl(this.autoHeight);
         }
