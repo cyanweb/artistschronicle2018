@@ -1682,6 +1682,23 @@ img.alignleft, img.aligncenter, img.alignright, img.alignnone {
     border: 1px solid #d5302a;
 }
 
+/* DO LESS MORE EXPANDER */
+.dolessmore { overflow: hidden; }
+
+.dolessmoreblock { position: relative; }
+
+.lm-control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.dlmexpand { padding-bottom: 20px; }
+
 
 /*
 CLEARFIX

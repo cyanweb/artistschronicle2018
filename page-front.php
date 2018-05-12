@@ -68,7 +68,8 @@ if($issueimage) {
        <div id="editorial-list-lft"><?php if($issueimageurl){echo $issueimageurl;}?></div>
       
        <div id="editorial-list-rt">
-          <?php
+           <div class="dolessmore">
+               <?php
           // get editorial title and content as $editorial_title and $editorial_content based on the current issue
 
           ?>
@@ -77,7 +78,8 @@ if($issueimage) {
             <p>Using unlikely antennas such as graphite drawings, viewers can listen to this invisible energy and add their own by touching the drawings. Both solo and collaborative works in Energies: Haines & Hinterding reveal a passion for science in the two artists’ aesthetically-driven work...</p>
 
              <div class="full"><a href="#">click to read full editorial</a></div>
-       </div> 
+           </div> <!-- end do less more -->
+       </div>
    
 
        </div> 

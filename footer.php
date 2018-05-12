@@ -60,14 +60,7 @@
 <!-- Read More -->
 <script type='text/javascript'>//<![CDATA[
     $(window).load(function(){
-        var moreText = "read more",
-            lessText = "read less",
-            moreButton = $("a.readmorebtn");
-
-        moreButton.click(function () {
-            var $this = $(this);
-            $this.text($this.text() == moreText ? lessText : moreText).nextAll(".more").slideToggle("fast");
-        });
+        $('.dolessmore').dolessmore({lHeight : 200});
     });//]]>
 
 </script>
